@@ -1,0 +1,30 @@
+.header {
+  height: 80px;
+  background-color: pink;
+  /* display: flex; */
+  justify-content: center;
+  padding: 12px 4px 4px 16px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+  color: black;
+  margin: 0px;
+}
+
+.header__search {
+}
+.header__searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header__menuItems {
+  display: flex;
+  align-items: center;
+}
