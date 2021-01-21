@@ -5,3 +5,21 @@
 body {
   background-color: white;
 }
+
+.app__header {
+  flex: 1 1 auto;
+  height: 80px;
+  /* background-color: pink; */
+  justify-content: center;
+  padding: 12px 4px 4px 16px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.app__body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
