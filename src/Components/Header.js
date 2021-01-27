@@ -13,6 +13,7 @@ import db from "../firebase";
 
 function Header(props) {
   const [input, setInput] = useState("");
+  const [isRedColor, setRedColor] = useState(false);
 
   console.log("what is input", input);
   console.log("what are props", props);
@@ -27,11 +28,19 @@ function Header(props) {
     });
   };
 
+  const toggleColor = () => setRedColor((prev) => !prev);
+
   return (
     <div className="header">
       <div className="header__wrapper">
         <div className="header__logo">
-          <PinterestIcon />
+          <PinterestIcon
+            onClick={toggleColor}
+            style={{
+              background: isRedColor ? "#e60023" : "black",
+              color: "white",
+            }}
+          />
         </div>
         <div className="header__button homePage">
           <a href="/">

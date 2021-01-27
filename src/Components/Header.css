@@ -8,9 +8,11 @@
 }
 
 .header__logo .MuiSvgIcon-root {
-  color: #e60023;
+  /* color: #e60023; */
   font-size: 32px;
   cursor: pointer;
+  border-radius: 50px;
+  /* border: none; */
 }
 
 .header__search {
